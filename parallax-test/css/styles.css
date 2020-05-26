@@ -19,13 +19,13 @@ body {
     height: 100vh;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-    margin-bottom: 40%;
+    margin-bottom: 600px;
 }
 
 .parallax__line_3d {
     transform: rotateY(0.055deg) scale(0.7);
     margin-left: 320px;
-    margin-bottom: 15%;
+    margin-bottom: 150px;
 }
 
 .parallax__layer {
@@ -34,6 +34,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    background-size: cover;
 }
 
 .parallax__layer_base {
