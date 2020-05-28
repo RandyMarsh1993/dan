@@ -1,6 +1,6 @@
 function rotateContent() {
 	
-	let line = document.getElementsByClassName('parallax__line');
+	let line = document.getElementsByClassName('parallax');
 	let border = document.getElementsByClassName('border-block');
 	
 	for (let i = 0; i < line.length; i++) {
