@@ -7,14 +7,14 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.parallax {
+.wrapper {
     height: 100vh;
     perspective: 1px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.parallax__line {
+.parallax {
     position: relative;
     height: 100vh;
     transform-style: preserve-3d;
@@ -37,55 +37,20 @@ body {
     background-size: cover;
 }
 
-.parallax__layer_base {
-    padding: 5% 10%;
-    transform: translateZ(0);
-    text-align: center;
-    z-index: 2;
-}
-
-.parallax__layer_back {
-    transform: translateZ(-1px) scale(2);
-    height: 80%;
-}
-
-.parallax__layer_deep {
-    transform: translateZ(-2px) scale(3);
-    height: 80%;
-}
-
 .parallax__layer_half-deep {
     transform: translateZ(-0.5px) scale(1.5);
     height: 80%;
-}
-
-.parallax__layer_top {
-    text-align: center;
-    transform: translateZ(0.25px) scale(0.75);
-    padding-top: 15%;
 }
 
 .line_1 {
     background-image: url('../img/img_1.jpg');
 }
 
-.line_2 {
-    background-image: url('../img/img_2.jpg');
-}
-
-.line_3 {
-    background-image: url('../img/img_3.jpg');
-}
-
-.line_4 {
-    background-image: url('../img/img_4.jpg');
-}
-
-h1 {
-    font-size: 70px;
-    font-weight: 100;
-    margin-bottom: 30px;
-    opacity: 0.65;
+.parallax__layer_base {
+    padding: 5% 10%;
+    transform: translateZ(0);
+    text-align: center;
+    z-index: 2;
 }
 
 h4 {
@@ -98,6 +63,19 @@ h4 {
 h5 {
     font-size: 20px;
     opacity: 0.2;
+}
+
+.parallax__layer_top {
+    text-align: center;
+    transform: translateZ(0.25px) scale(0.75);
+    padding-top: 15%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    opacity: 0.65;
 }
 
 button {
@@ -123,4 +101,111 @@ button:hover {
 button:active {
     opacity: 0.8;
     transform: scale(1.15);
+}
+
+.border-block {
+    transition: all 1s ease-in-out;
+}
+
+.border-block.border-block_hidden {
+    display: none;
+}
+
+.parallax__border-top_1 {
+    display: block;
+    background-color: #fff;
+    transform: translateZ(0);
+    height: 150px;
+}
+
+.parallax__border-bottom_1 {
+    display: block;
+    position: absolute;
+    bottom: -200px;
+    background-color: #fff;
+    transform: translateZ(0);
+    height: 300px;
+    width: 100%;
+}
+
+.parallax__border-top_2 {
+    transform: translateZ(-0.5px) scale(1.5);
+    display: block;
+    background-color: #fff;
+    height: 240px;
+    position: absolute;
+    top: -466px;
+    width: 100%;
+}
+
+.parallax__layer_back {
+    transform: translateZ(-1px) scale(2);
+    height: 80%;
+}
+
+.line_2 {
+    background-image: url('../img/img_2.jpg');
+}
+
+.parallax__border-bottom_2 {
+    transform: translateZ(-0.5px) scale(1.5);
+    display: block;
+    background-color: #fff;
+    height: 540px;
+    position: absolute;
+    bottom: -670px;
+    width: 110%;
+}
+
+.parallax__border-top_3 {
+    transform: translateZ(0);
+    display: block;
+    background-color: #fff;
+    height: 300px;
+    position: absolute;
+    top: -310px;
+    width: 110%;
+}
+
+.line_3 {
+    background-image: url('../img/img_3.jpg');
+}
+
+.parallax__layer_deep {
+    transform: translateZ(-2px) scale(3);
+    height: 80%;
+}
+
+.parallax__border-bottom_3 {
+    transform: translateZ(0);
+    display: block;
+    background-color: #fff;
+    height: 400px;
+    position: absolute;
+    bottom: -220px;
+    width: 100%;
+}
+
+.parallax__border-top_4 {
+    transform: translateZ(-0.5px) scale(1.5);
+    display: block;
+    background-color: #fff;
+    height: 240px;
+    position: absolute;
+    top: -440px;
+    width: 100%;
+}
+
+.line_4 {
+    background-image: url('../img/img_4.jpg');
+}
+
+.parallax__border-bottom_4 {
+    transform: translateZ(-0.5px) scale(1.5);
+    display: block;
+    background-color: #fff;
+    height: 240px;
+    position: absolute;
+    bottom: -280px;
+    width: 100%;
 }
